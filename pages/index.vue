@@ -40,7 +40,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
           </p>
-          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
+          <p class="cta opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -50,7 +50,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
           </p>
-          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
+          <p class="cta opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -60,7 +60,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials & verification made easy
           </p>
-          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
+          <p class="cta opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -70,7 +70,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality
           </p>
-          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
+          <p class="cta opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
             View Project
           </p>
         </NuxtLink>

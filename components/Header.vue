@@ -29,12 +29,12 @@
 
     <div class="mob-menu">
       <a href="#" class="button text-lg leading-none inline-block rounded-full font-bold bg-white text-dark">
-        <div class="hamburger">
-          <div class="hamburgerTop"></div>
-          <div class="hamburgerMiddle"></div>
-          <div class="hamburgerBottom"></div>
+        <div class="hamburger inline-block">
+          <div class="hamburgerTop block absolute bg-black"></div>
+          <div class="hamburgerMiddle block absolute bg-black"></div>
+          <div class="hamburgerBottom block absolute bg-black"></div>
         </div>
-        <span>Menu</span>
+        <span class="inline-block text-xl leading-none">Menu</span>
       </a>
     </div>
   </header>

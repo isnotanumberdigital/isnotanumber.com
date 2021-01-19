@@ -138,26 +138,20 @@ footer {
 }
 
 .mob-menu span {
-  display: inline-block;
   transform: translate3d(0, -8px, 0);
   padding-left: 5px;
-  font-size: 1.25rem;
 }
 
 .hamburger {
   width: 30px;
   height: 30px;
-  display: inline-block;
 }
 
 .hamburgerTop,
 .hamburgerMiddle,
 .hamburgerBottom {
-  position: absolute;
-  display: block;
   width: 25px;
   height: 2px;
-  background: black;
 }
 
 .hamburgerTop,
@@ -201,7 +195,7 @@ footer {
   margin-top: 15px;
 }
 
-/*mobile*/
+/* mobile */
 @media screen and (max-width: 992px) {
   .navigation {
     position: fixed;
@@ -253,7 +247,6 @@ footer {
   }
 
   .project .cta {
-    opacity: 1 !important;
     transform: translate3d(0, 0, 0) !important;
   }
 }
