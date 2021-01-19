@@ -1,0 +1,352 @@
+@import 'fonts.css';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: "stelvio grotesk";
+  color: #171717; }
+
+@media screen and (max-width: 697px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+.leading-tight {
+  line-height: 1.25 !important; }
+
+.button {
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  padding: 15px 20px 10px 20px;
+  font-weight: bold;
+  transform: scale(1);
+  -webkit-transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .button-default {
+    background: #171717;
+    color: #fff; }
+  .button:hover {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+    -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.home-slider {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  z-index: -1; }
+  .home-slider-intro {
+    height: 90vh;
+    background: url("../img/intro-bg.jpg") center center no-repeat;
+    background-size: cover;
+    color: #171717; }
+  .home-slider-1 {
+    background: url("../img/updog-2.jpg") center center no-repeat;
+    background-size: cover;
+    height: 90vh; }
+  .home-slider-2 {
+    background: url("../img/photo-1517089596392-fb9a9033e05b.jpg") center center no-repeat;
+    background-size: cover;
+    height: 90vh; }
+  .home-slider-3 {
+    background: url("../img/gs-hs.png") center center no-repeat;
+    background-size: cover;
+    height: 90vh; }
+  .home-slider-4 {
+    background: url("../img/craftr-hs.png") center center no-repeat;
+    background-size: cover;
+    height: 90vh; }
+  .home-slider-5 {
+    background: url("../img/balansa-hs.jpg") center center no-repeat;
+    background-size: cover;
+    height: 90vh; }
+  .home-slider-6 {
+    background: url("../img/balansa-hs-old.png") center center no-repeat;
+    background-size: cover;
+    height: 90vh; }
+  @media screen and (max-width: 992px) {
+    .home-slider-3 {
+      background: url("../img/gs-hs-m.jpg") center center no-repeat;
+      background-size: cover; }
+    .home-slider-4 {
+      background: url("../img/craftr-hs-m.jpg") center center no-repeat;
+      background-size: cover; }
+    .home-slider-5 {
+      background: url("../img/balansa-hs-m.jpg") center center no-repeat;
+      background-size: cover; }
+    .home-slider-6 {
+      background: url("../img/balansa-hs-old-m.jpg") center center no-repeat;
+      background-size: cover; } }
+
+@-webkit-keyframes foo {
+  0% {
+    transform: translate(0px, 0px); }
+  100% {
+    transform: translate(60px, 60px); } }
+@media screen and (max-width: 992px) {
+  @-webkit-keyframes foo {
+    0% {
+      transform: translate(0px, 0px); }
+    100% {
+      transform: translate(20px, 20px); } } }
+.stand-out {
+  position: relative;
+  animation-name: foo;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  -webkit-transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.one-one {
+  position: relative; }
+  .one-one:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%; }
+  .one-one > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.sixteen-nine {
+  position: relative; }
+  .sixteen-nine:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; }
+  .sixteen-nine > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.nine-sixteen {
+  position: relative; }
+  .nine-sixteen:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 177.7777777778%; }
+  .nine-sixteen > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+header {
+  position: relative;
+  -webkit-transition: color 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  header #logo {
+    display: inline-block; }
+  header .logo {
+    width: 100px; }
+  header nav {
+    display: inline-block; }
+    header nav li {
+      display: inline-block; }
+
+.header-dark {
+  color: #fff; }
+
+.project .cta {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  -webkit-transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.project:hover .cta {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.link-updog {
+  background: url("../img/links/ud-p-hero.png") center center no-repeat;
+  background-size: cover; }
+.link-balansa {
+  background: url("../img/links/bp-p-hero.png") center center no-repeat;
+  background-size: cover; }
+.link-mcw {
+  background: url("../img/links/mcw-p-hero.png") center center no-repeat;
+  background-size: cover; }
+.link-gradsmart {
+  background: url("../img/links/gs-p-hero.png") center center no-repeat;
+  background-size: cover; }
+
+footer {
+  background-color: rgba(156, 163, 175, 0.1); }
+
+.project-single-hero {
+  width: 100%;
+  height: 90vh;
+  background: url("../img/links/bp-p-hero.png") center center no-repeat;
+  background-size: cover; }
+
+.about {
+  background: #0f0f0f; }
+  .about footer {
+    background-color: transparent; }
+
+.about-hero {
+  position: fixed;
+  width: 100%;
+  height: 100vh; }
+
+.clear-img {
+  background: url("../img/about/f-2020.jpg") center center no-repeat;
+  background-size: 100%; }
+
+.blurred-img {
+  opacity: 0;
+  background: url("../img/about/f-2020-blurred.jpg") center center no-repeat;
+  background-size: 100%; }
+
+.about-intro {
+  padding-top: 90vh;
+  position: relative;
+  z-index: 1;
+  color: #fff; }
+
+.about .footer {
+  color: #fff;
+  position: relative; }
+
+.contact {
+  background: #0f0f0f;
+  color: #fff; }
+
+.mob-menu {
+  display: none; }
+  .mob-menu span {
+    display: inline-block;
+    transform: translate3d(0, -8px, 0);
+    padding-left: 5px;
+    font-size: 1.25rem; }
+
+/* Main style of the hamburger icon */
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: inline-block; }
+
+/* Style of the layers of the hamburger */
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: black; }
+
+/* Animation from open (X) to close (hamburger) */
+.hamburgerTop,
+.hamburgerBottom {
+ /*
+* Parameter explanation:
+* transform    - rotating back elements
+* 0.4s         - duration of 'transform'-animation
+* ease         - animation style for 'transform'
+*
+* margin-top   - bring layers to original position
+* 0.3s         - duration for 'margin-top'
+* ease         - animation style for 'margin-top'
+* 0.4s         - wait 0.4s (duration of 'transform') before starting 'margin-top'-animation
+*/
+  transition: transform 0.4s ease, margin-top 0.3s ease 0.4s; }
+
+.hamburgerMiddle {
+  transition: opacity 0.2s ease 0.5s; }
+
+/* Margin between the layers */
+.hamburgerTop {
+  margin-top: 7px; }
+
+.hamburgerMiddle {
+  margin-top: 15px; }
+
+.hamburgerBottom {
+  margin-top: 23px; }
+
+/* Animation from close (hamburger) to open (X) */
+.hamburgerTop.open,
+.hamburgerBottom.open {
+  transition: margin-top 0.3s ease, transform 0.4s ease 0.3s; }
+
+/*
+ * All layers at same position.
+ * One layer not visible at all.
+ * Two layers forming an 'X'-shape.
+ */
+.hamburgerTop.open {
+  transform: rotate(45deg);
+  margin-top: 15px; }
+
+.hamburgerMiddle.open {
+  opacity: 0;
+  transition: none; }
+
+.hamburgerBottom.open {
+  transform: rotate(-45deg);
+  margin-top: 15px; }
+
+@media screen and (max-width: 992px) {
+  .navigation {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #171717;
+    height: 100vh;
+    width: 100%;
+    color: #fff !important;
+    display: none;
+    -webkit-transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 0; }
+    .navigation ul {
+      padding: 30px; }
+      .navigation ul li {
+        display: block;
+        padding: 10px 0;
+        text-align: center; }
+      .navigation ul .link-email {
+        font-size: 1.5rem; }
+
+  .open-menu {
+    display: block !important;
+    -webkit-transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1 !important; }
+
+  .mob-menu {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+    .mob-menu .button {
+      background: #fff;
+      color: #171717 !important;
+      padding: 10px 20px 0px 20px;
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15); }
+
+  .project .cta {
+    opacity: 1 !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important; } }
+
+/*# sourceMappingURL=master.css.map */
