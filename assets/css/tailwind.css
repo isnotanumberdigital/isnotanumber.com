@@ -75,6 +75,11 @@
   }
 }
 
+/* projects */
+.header-balansa {
+  background-image: url('../img/links/bp-p-hero.png');
+}
+
 /* todo: tailwind config this */
 .animate-stand-out {
   transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
