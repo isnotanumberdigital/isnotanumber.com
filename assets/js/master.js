@@ -9,11 +9,6 @@ $(function() {
         cssEase: "linear"
     });
 
-    // white header on init
-    // if ($(".home-slider")) {
-    //     $(".header").addClass("header-dark");
-    // }
-
     $(".home-slider").on("afterChange", function(slick, currentSlide) {
         console.log("change");
         if ($(".slick-active").hasClass("dark")) {

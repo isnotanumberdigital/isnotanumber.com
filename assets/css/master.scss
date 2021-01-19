@@ -1,14 +1,7 @@
-@import 'fonts.css';
 
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-body {
-    font-family: "stelvio grotesk";
-    color: #171717;
-}
+
+
 
 .container {
     @media screen and (max-width: 697px) {
@@ -28,16 +21,13 @@ body {
     padding: 15px 20px 10px 20px;
     font-weight: bold;
     transform: scale(1);
-    -webkit-transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &-default {
         background: #171717;
         color: #fff;
     }
     &:hover {
-        -webkit-transform: translate3d(0, -5px, 0);
         transform: translate3d(0, -5px, 0);
-        -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
 }
