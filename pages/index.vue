@@ -34,7 +34,7 @@
     </section>
     <section class="container mx-auto py-8">
       <div class="grid gap-16 md:grid-cols-2">
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 375, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 link-updog bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">UpDog</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
@@ -44,7 +44,7 @@
             View Project
           </p>
         </NuxtLink>
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 425, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 link-balansa bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">balansa+</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
@@ -54,7 +54,7 @@
             View Project
           </p>
         </NuxtLink>
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 475, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 link-mcw bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
@@ -64,7 +64,7 @@
             View Project
           </p>
         </NuxtLink>
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 525, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 link-gradsmart bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">Gradsmart</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
