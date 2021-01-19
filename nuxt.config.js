@@ -4,10 +4,11 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'isnotanumber.com',
+    title: 'Not a Number',
     htmlAttrs: {
       lang: 'en',
-      dir: 'ltr'
+      dir: 'ltr',
+      class: 'bg-white antialiased font-sans text-dark'
     },
     meta: [
       { charset: 'utf-8' },
@@ -15,11 +16,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     script: [
-      { src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js' },
-      { src: 'https://unpkg.com/scrollreveal' },
-      { src: '~/assets/js/master.js' }
+      { src: 'https://unpkg.com/scrollreveal' }
     ],
     link: [
       // TODO: remove for npm

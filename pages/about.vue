@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="bg-darker">
     <Header mode="dark" />
 
-    <section class="about-hero clear-img"></section>
+    <section class="about-hero fixed w-full min-h-screen clear-img bg-center bg-no-repeat"></section>
 
-    <section class="about-hero blurred-img"></section>
+    <section class="about-hero fixed w-full min-h-screen blurred-img opacity-0 bg-center bg-no-repeat"></section>
 
-    <section class="container mx-auto max-w-screen-xl about-intro sm:px-24">
+    <section class="container mx-auto max-w-screen-xl pt-90 relative z-10 text-white sm:px-24">
       <div class="grid gap-16 md:grid-cols-2 mb-32 align-bottom">
         <!-- suggestion: multiple paragraphs instead of brs? -->
         <p class="text-2xl leading-normal">
@@ -30,6 +30,17 @@
       </div>
     </section>
 
-    <Footer />
+    <Footer mode="dark" :transparent="true" />
   </div>
 </template>
+
+<script>
+export default {
+  mounted () {
+    window.onscroll = () => {
+      const blurredImg = document.getElementsByClassName('blurred-img')[0]
+      blurredImg.style.opacity = window.scrollY / 150.0
+    }
+  }
+}
+</script>

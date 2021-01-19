@@ -1,5 +1,8 @@
 <template>
-  <footer>
+  <footer
+    class="relative"
+    :class="{'text-white': mode === 'dark', 'bg-transparent': transparent}"
+  >
     <div class="footer container mx-auto mt-16 py-32">
       <div class="grid gap-16 md:grid-cols-2">
         <div class="footer-half">
@@ -17,3 +20,18 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  props: {
+    mode: {
+      type: String,
+      default: 'light'
+    },
+    transparent: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
+</script>

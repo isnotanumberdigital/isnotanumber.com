@@ -2,22 +2,26 @@
   <div>
     <Header />
 
-    <div class="home-slider">
-      <div class="home-slider-intro">
+    <VueSlickCarousel
+      class="home-slider w-full h-90 relative z-0"
+      v-bind="settings"
+      @afterChange="onAfterChange"
+    >
+      <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
         <div class="container mx-auto p-8 h-screen flex items-center">
           <h2 class="text-6xl md:text-8xl">
-            Why fit in when <br>you can <span class="stand-out">stand out</span>
+            Why fit in when <br>you can <span class="animate-stand-out relative inline-block">stand out</span>
           </h2>
         </div>
       </div>
 
-      <div class="home-slider-single home-slider-1 dark"></div>
-      <div class="home-slider-single home-slider-2 dark"></div>
-      <div class="home-slider-single home-slider-3"></div>
-      <div class="home-slider-single home-slider-4 dark"></div>
-      <div class="home-slider-single home-slider-5"></div>
-      <div class="home-slider-single home-slider-6"></div>
-    </div>
+      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-1 dark"></div>
+      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-2 dark"></div>
+      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-3"></div>
+      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-4 dark"></div>
+      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-5"></div>
+      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-6"></div>
+    </VueSlickCarousel>
 
     <section class="container mx-auto py-16 md:py-24 lg:py-32">
       <div class="grid gap-16 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
@@ -30,46 +34,46 @@
     </section>
     <section class="container mx-auto py-8">
       <div class="grid gap-16 md:grid-cols-2">
-        <a class="project">
-          <div class="image sixteen-nine link-updog"></div>
+        <NuxtLink to="/balansa" class="project group">
+          <div class="image aspect-w-16 aspect-h-9 link-updog bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">UpDog</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
           </p>
-          <p class="cta font-bold text-lg tracking-wider uppercase">
+          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
             View Project
           </p>
-        </a>
-        <a class="project" href="/balansa.html">
-          <div class="image sixteen-nine link-balansa"></div>
+        </NuxtLink>
+        <NuxtLink to="/balansa" class="project group">
+          <div class="image aspect-w-16 aspect-h-9 link-balansa bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">balansa+</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
           </p>
-          <p class="cta font-bold text-lg tracking-wider uppercase">
+          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
             View Project
           </p>
-        </a>
-        <a class="project">
-          <div class="image sixteen-nine link-mcw"></div>
+        </NuxtLink>
+        <NuxtLink to="/balansa" class="project group">
+          <div class="image aspect-w-16 aspect-h-9 link-mcw bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials & verification made easy
           </p>
-          <p class="cta font-bold text-lg tracking-wider uppercase">
+          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
             View Project
           </p>
-        </a>
-        <a class="project">
-          <div class="image sixteen-nine link-gradsmart"></div>
+        </NuxtLink>
+        <NuxtLink to="/balansa" class="project group">
+          <div class="image aspect-w-16 aspect-h-9 link-gradsmart bg-cover bg-center bg-no-repeat"></div>
           <h3 class="mt-8 text-2xl">Gradsmart</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality
           </p>
-          <p class="cta font-bold text-lg tracking-wider uppercase">
+          <p class="cta opacity-0 font-bold text-lg tracking-wider uppercase group-hover:opacity-100">
             View Project
           </p>
-        </a>
+        </NuxtLink>
       </div>
     </section>
 
@@ -79,9 +83,46 @@
         of the exceptional, your end-to-end solution.
       </p>
 
-      <a href="#" class="button button-default">Learn more</a>
+      <NuxtLink to="/balansa" class="button text-lg leading-none inline-block rounded-full font-bold bg-dark text-white">
+        Learn more
+      </NuxtLink>
     </section>
 
     <Footer />
   </div>
 </template>
+
+<script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+
+export default {
+  components: {
+    VueSlickCarousel
+  },
+  data() {
+    return {
+      settings: {
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 800,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear'
+      },
+    }
+  },
+  methods: {
+    onAfterChange: (slideIndex) => {
+      var activeSlide = document.getElementsByClassName('slick-active')[0]
+      var activeSlideItem = activeSlide?.getElementsByClassName('home-slider-item')[0]
+      var header = document.getElementsByClassName('header')[0]
+
+      activeSlideItem?.classList.contains('dark')
+        ? header?.classList.add('header-dark')
+        : header?.classList.remove('header-dark')
+    }
+  }
+}
+</script>

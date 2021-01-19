@@ -2,7 +2,7 @@
   <div>
     <Header mode="dark" />
 
-    <section class="project-single-hero"></section>
+    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${image});`}"></section>
 
     <section class="container mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
@@ -38,3 +38,15 @@
     <Footer />
   </div>
 </template>
+
+<script>
+import heroImage from '@/assets/img/links/bp-p-hero.png'
+
+export default {
+  data () {
+    return {
+      image: heroImage
+    }
+  }
+}
+</script>
