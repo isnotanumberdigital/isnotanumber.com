@@ -18,7 +18,7 @@
       </div>
     </section>
 
-    <img class="project-image" src="~/assets/img/contact/mountain@2x.jpg" alt="Mountain" />
+    <img class="project-image" src="~/assets/img/contact/mountain@2x.jpg" alt="Mountains" v-scroll-reveal />
 
     <Footer />
   </div>

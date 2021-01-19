@@ -24,16 +24,16 @@
         </p>
       </div>
 
-      <img class="project" src="~/assets/img/project-singles/balansa/bp-ps-1.png" alt="balansa+">
+      <img class="project" src="~/assets/img/project-singles/balansa/bp-ps-1.png" alt="balansa+" v-scroll-reveal="{ viewFactor: 0.5 }" />
     </section>
 
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-2.png" alt="balansa+">
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-3.png" alt="balansa+">
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-4.png" alt="balansa+">
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-5.png" alt="balansa+">
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-6.png" alt="balansa+">
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-7.png" alt="balansa+">
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-8.png" alt="balansa+">
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-2.png" alt="balansa+" v-scroll-reveal />
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-3.png" alt="balansa+" v-scroll-reveal />
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-4.png" alt="balansa+" v-scroll-reveal />
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-5.png" alt="balansa+" v-scroll-reveal />
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-6.png" alt="balansa+" v-scroll-reveal />
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-7.png" alt="balansa+" v-scroll-reveal />
+    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-8.png" alt="balansa+" v-scroll-reveal />
 
     <Footer />
   </div>

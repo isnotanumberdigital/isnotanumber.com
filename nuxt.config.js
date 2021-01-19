@@ -15,12 +15,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
-    script: [
-      { src: 'https://unpkg.com/scrollreveal' }
-    ],
     link: [
-      // TODO: remove for npm
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
@@ -31,6 +26,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vue-scroll-reveal', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
