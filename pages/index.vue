@@ -83,7 +83,7 @@
         of the exceptional, your end-to-end solution.
       </p>
 
-      <NuxtLink to="/balansa" class="button text-lg leading-none inline-block rounded-full font-bold bg-dark text-white">
+      <NuxtLink to="/balansa" class="button transition duration-300 ease-in-out text-lg leading-none inline-block rounded-full font-bold bg-dark text-white transform hover:-translate-y-1 hover:scale-110">
         Learn more
       </NuxtLink>
     </section>

@@ -28,7 +28,7 @@
     </nav>
 
     <div class="mob-menu">
-      <a href="#" class="button text-lg leading-none inline-block rounded-full font-bold bg-white text-dark">
+      <a href="#" class="button transition duration-300 ease-in-out text-lg leading-none inline-block rounded-full font-bold bg-white text-dark transform hover:-translate-y-1 hover:scale-110">
         <div class="hamburger inline-block">
           <div class="hamburgerTop block absolute bg-black"></div>
           <div class="hamburgerMiddle block absolute bg-black"></div>
