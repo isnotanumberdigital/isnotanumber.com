@@ -1,7 +1,7 @@
 <template>
   <header
     class="p-8 flex absolute w-full z-40 header"
-    :class="{'header-dark': mode === 'dark'}"
+    :class="{'text-white': mode === 'dark'}"
     ref="header"
   >
     <div id="logo" class="flex-auto inline-block">

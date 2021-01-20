@@ -120,8 +120,8 @@ export default {
       var header = document.getElementsByClassName('header')[0]
 
       activeSlideItem?.classList.contains('dark')
-        ? header?.classList.add('header-dark')
-        : header?.classList.remove('header-dark')
+        ? header?.classList.add('text-white')
+        : header?.classList.remove('text-white')
     }
   }
 }
