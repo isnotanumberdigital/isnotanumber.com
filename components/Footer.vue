@@ -4,7 +4,7 @@
     :class="{
       'text-white': mode === 'dark',
       'bg-transparent': transparent,
-      'mt-16': flush
+      'mt-16': !flush
     }"
   >
     <div class="footer px-6 mx-auto py-32">

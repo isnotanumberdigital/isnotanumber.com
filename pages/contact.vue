@@ -20,6 +20,6 @@
 
     <img class="project-image" src="~/assets/img/contact/mountain@2x.jpg" alt="Mountains" v-scroll-reveal />
 
-    <Footer />
+    <Footer :flush="true" />
   </div>
 </template>
