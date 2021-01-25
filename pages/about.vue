@@ -6,7 +6,7 @@
 
     <section class="about-hero fixed w-full min-h-screen blurred-img opacity-0 bg-center bg-no-repeat"></section>
 
-    <section class="container mx-auto max-w-screen-xl pt-90 relative z-10 text-white sm:px-24">
+    <section class="px-6 mx-auto max-w-screen-xl pt-90 relative z-10 text-white sm:px-24">
       <div class="grid gap-16 md:grid-cols-2 mb-32 align-bottom">
         <!-- suggestion: multiple paragraphs instead of brs? -->
         <p class="text-2xl leading-normal">

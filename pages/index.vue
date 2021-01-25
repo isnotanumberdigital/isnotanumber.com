@@ -8,7 +8,7 @@
       @afterChange="onAfterChange"
     >
       <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
-        <div class="container mx-auto p-8 h-screen flex items-center">
+        <div class="px-6 mx-auto p-8 h-screen flex items-center">
           <h2 class="text-6xl md:text-8xl">
             Why fit in when <br>you can <span class="animate-stand-out relative inline-block">stand out</span>
           </h2>
@@ -23,19 +23,19 @@
       <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-6"></div>
     </VueSlickCarousel>
 
-    <section class="container mx-auto py-16 md:py-24 lg:py-32">
+    <section class="px-6 mx-auto py-16 md:py-24 lg:py-32">
       <div class="grid gap-16 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         <h3 class="text-4xl text-gray-400"></h3>
-        <p class="text-3xl md:text-4xl lg:text-5xl leading-tight">
+        <p class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
           We are a fully integrated digital agency – partners to the brave,
           makers of the exceptional, your end-to-end solution.
         </p>
       </div>
     </section>
-    <section class="container mx-auto py-8">
+    <section class="px-6 mx-auto py-8">
       <div class="grid gap-16 md:grid-cols-2">
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 375, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 link-updog bg-cover bg-center bg-no-repeat"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/ud-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">UpDog</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
@@ -45,7 +45,7 @@
           </p>
         </NuxtLink>
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 425, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 link-balansa bg-cover bg-center bg-no-repeat"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">balansa+</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
@@ -55,7 +55,7 @@
           </p>
         </NuxtLink>
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 475, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 link-mcw bg-cover bg-center bg-no-repeat"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials & verification made easy
@@ -65,7 +65,7 @@
           </p>
         </NuxtLink>
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 525, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 link-gradsmart bg-cover bg-center bg-no-repeat"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">Gradsmart</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality
@@ -77,8 +77,8 @@
       </div>
     </section>
 
-    <section class="container mx-auto py-32 md:py-44 lg:py-56 text-center">
-      <p class="text-3xl md:text-4xl lg:text-5xl leading-tight mx-auto mb-12 max-w-4xl">
+    <section class="px-6 mx-auto py-32 md:py-44 lg:py-56 text-center">
+      <p class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight-tight mx-auto mb-12 max-w-4xl">
         We are a fully integrated digital agency – partners to the brave, makers
         of the exceptional, your end-to-end solution.
       </p>

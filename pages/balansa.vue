@@ -2,9 +2,9 @@
   <div>
     <Header mode="dark" />
 
-    <section class="header-balansa w-full h-90 bg-cover bg-center bg-no-repeat"></section>
+    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.png')})`}"></section>
 
-    <section class="container mx-auto py-32">
+    <section class="px-6 mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
         <div>
           <h3 class="text-4xl text-gray-400">Client:</h3>
