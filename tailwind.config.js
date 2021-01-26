@@ -38,6 +38,9 @@ module.exports = {
       animation: {
         'stand-out': 'move-a-lot 1s linear 1s 1 forwards',
       },
+      transitionTimingFunction: {
+        DEFAULT: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+      },
     },
   },
   variants: {
