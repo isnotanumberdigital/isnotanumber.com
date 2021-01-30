@@ -33,7 +33,7 @@
     </section>
     <section class="px-6 mx-auto py-8">
       <div class="grid gap-16 md:grid-cols-2">
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 375, viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 75, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/ud-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">UpDog</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
@@ -43,7 +43,7 @@
             View Project
           </p>
         </NuxtLink>
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 425, viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 125, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">balansa+</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
@@ -53,7 +53,7 @@
             View Project
           </p>
         </NuxtLink>
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 475, viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 175, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
@@ -63,7 +63,7 @@
             View Project
           </p>
         </NuxtLink>
-        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 525, viewFactor: 0.5 }">
+        <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 225, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.png')})`}"></div>
           <h3 class="mt-8 text-2xl">Gradsmart</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
