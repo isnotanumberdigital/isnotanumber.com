@@ -6,7 +6,7 @@
   >
     <div id="logo" class="flex-auto inline-block">
       <NuxtLink to="/">
-        <h1 class="text-3xl text-center lg:text-left">Not a Number</h1>
+        <h1 class="text-3xl text-center md:text-left">Not a Number</h1>
       </NuxtLink>
     </div>
 
