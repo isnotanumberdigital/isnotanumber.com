@@ -1,28 +1,28 @@
 <template>
   <header
-    class="p-8 flex absolute w-full z-40 header transition-colors duration-300"
-    :class="{'text-white': mode === 'dark'}"
+    class="p-8 flex absolute text-white w-full z-40 header transition-colors duration-300"
+    style="mix-blend-mode: difference;"
     ref="header"
   >
     <div id="logo" class="flex-auto inline-block">
       <NuxtLink to="/">
-        <h1 class="text-3xl text-center md:text-left">Not a Number</h1>
+        <h1 class="text-2xl lg:text-3xl text-center sm:text-left">Not a Number</h1>
       </NuxtLink>
     </div>
 
     <nav>
       <div class="flex-auto text-right hidden sm:block" id="desktop">
         <ul class="space-x-2">
-          <li class="inline-block text-left px-4 text-3xl">
+          <li class="inline-block text-left px-4 text-2xl lg:text-3xl">
             <NuxtLink to="/balansa">Work</NuxtLink>
           </li>
-          <li class="inline-block text-left px-4 text-3xl">
+          <li class="inline-block text-left px-4 text-2xl lg:text-3xl">
             <NuxtLink to="/about">About</NuxtLink>
           </li>
-          <li class="inline-block text-left px-4 text-3xl">
+          <li class="inline-block text-left px-4 text-2xl lg:text-3xl">
             <NuxtLink to="/contact">Contact</NuxtLink>
           </li>
-          <li class="inline-block text-left px-4 text-3xl">
+          <li class="hidden md:inline-block text-left px-4 text-2xl lg:text-3xl">
             <a href="mailto:hi@isnotanumber.com">hi@isnotanumber.com</a>
           </li>
         </ul>

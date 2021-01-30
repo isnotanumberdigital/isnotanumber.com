@@ -119,9 +119,9 @@ export default {
       var activeSlideItem = activeSlide?.getElementsByClassName('home-slider-item')[0]
       var header = document.getElementsByClassName('header')[0]
 
-      activeSlideItem?.classList.contains('dark')
-        ? header?.classList.add('text-white')
-        : header?.classList.remove('text-white')
+      // activeSlideItem?.classList.contains('dark')
+      //   ? header?.classList.add('text-white')
+      //   : header?.classList.remove('text-white')
     }
   }
 }
