@@ -94,16 +94,12 @@
   transition: opacity 0.2s ease 0.5s;
 }
 
-.hamburgerTop {
-  margin-top: 7px;
-}
-
 .hamburgerMiddle {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .hamburgerBottom {
-  margin-top: 23px;
+  margin-top: 16px;
 }
 
 .hamburgerTop.open,
