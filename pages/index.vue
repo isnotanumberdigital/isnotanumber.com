@@ -5,7 +5,6 @@
     <VueSlickCarousel
       class="home-slider w-full h-90 relative z-0"
       v-bind="settings"
-      @afterChange="onAfterChange"
     >
       <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
         <div class="px-6 mx-auto p-8 h-screen flex items-center">
@@ -111,17 +110,6 @@ export default {
         fade: true,
         cssEase: 'linear'
       },
-    }
-  },
-  methods: {
-    onAfterChange: (slideIndex) => {
-      var activeSlide = document.getElementsByClassName('slick-active')[0]
-      var activeSlideItem = activeSlide?.getElementsByClassName('home-slider-item')[0]
-      var header = document.getElementsByClassName('header')[0]
-
-      // activeSlideItem?.classList.contains('dark')
-      //   ? header?.classList.add('text-white')
-      //   : header?.classList.remove('text-white')
     }
   }
 }
