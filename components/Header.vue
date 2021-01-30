@@ -1,6 +1,6 @@
 <template>
   <header
-    class="p-8 flex absolute text-white w-full z-40 header transition-colors duration-300"
+    class="fixed p-8 flex text-white w-full z-40 header transition-colors duration-300"
     style="mix-blend-mode: difference;"
     ref="header"
   >
