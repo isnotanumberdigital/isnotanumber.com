@@ -38,36 +38,36 @@
 }
 
 .home-slider-3 {
-  background-image: url('../img/gs-hs.png');
+  background-image: url('../img/gs-hs-m.jpg');
 }
 
 .home-slider-4 {
-  background-image: url('../img/craftr-hs.png');
+  background-image: url('../img/craftr-hs-m.jpg');
 }
 
 .home-slider-5 {
-  background-image: url('../img/balansa-hs.jpg');
+  background-image: url('../img/balansa-hs-m.jpg');
 }
 
 .home-slider-6 {
-  background-image: url('../img/balansa-hs-old.png');
+  background-image: url('../img/balansa-hs-old-m.jpg');
 }
 
 @screen md {
   .home-slider-3 {
-    background-image: url('../img/gs-hs-m.jpg');
+    background-image: url('../img/gs-hs.png');
   }
 
   .home-slider-4 {
-    background-image: url('../img/craftr-hs-m.jpg');
+    background-image: url('../img/craftr-hs.png');
   }
 
   .home-slider-5 {
-    background-image: url('../img/balansa-hs-m.jpg');
+    background-image: url('../img/balansa-hs.jpg');
   }
 
   .home-slider-6 {
-    background-image: url('../img/balansa-hs-old-m.jpg');
+    background-image: url('../img/balansa-hs-old.png');
   }
 }
 
