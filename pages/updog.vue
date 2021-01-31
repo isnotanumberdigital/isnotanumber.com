@@ -8,7 +8,9 @@
       <div class="grid gap-16 md:grid-cols-2 mb-32">
         <ul>
           <li class="text-4xl text-gray-400">Client:</li>
-          <li class="text-4xl mb-4">BullyBillows, UpDog</li>
+          <li class="text-4xl mb-4">BullyBillows</li>
+          <li class="text-4xl text-gray-400">Project:</li>
+          <li class="text-4xl mb-4">UpDog</li>
           <li class="text-4xl text-gray-400">Services:</li>
           <li class="text-4xl">UX, UI, Strategy</li>
         </ul>

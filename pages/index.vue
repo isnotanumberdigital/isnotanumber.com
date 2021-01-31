@@ -8,9 +8,9 @@
         v-bind="settings"
       >
         <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
-          <div class="px-6 mx-auto p-8 h-screen flex items-center">
+          <div class="px-6 lg:pl-48 mx-auto p-8 h-screen flex items-center">
             <h2 class="text-6xl md:text-8xl">
-              Why fit in when <br>you can <span class="animate-stand-out relative inline-block">stand out</span>
+              Why fit in when <br>you can <span class="animate-lil-stand-out md:animate-big-stand-out relative inline-block">stand out</span>
             </h2>
           </div>
         </div>
