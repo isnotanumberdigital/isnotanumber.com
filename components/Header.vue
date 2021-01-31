@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed p-8 flex w-full z-40 header transition-colors duration-300"
+    class="absolute md:fixed p-8 flex w-full z-40 header transition-colors duration-300"
     :class="{
       'text-white': mode === 'light',
       'text-dark': mode === 'dark',
