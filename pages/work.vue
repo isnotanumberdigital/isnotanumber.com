@@ -10,7 +10,7 @@
       </div>
     </section>
 
-    <section class="px-6 mx-auto space-y-4 md:space-y-12 md:max-w-6xl py-8">
+    <section class="px-6 mx-auto space-y-12 md:max-w-6xl py-8">
       <!-- balansa+ -->
       <div class="md:max-w-3xl">
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 125, viewFactor: 0.5 }">
@@ -19,7 +19,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
           </p>
-          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
+          <p class="transform transition-all -translate-y-4 duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:transform-none group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -33,7 +33,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
           </p>
-          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
+          <p class="transform transition-all -translate-y-4 duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:transform-none group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -47,7 +47,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality
           </p>
-          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
+          <p class="transform transition-all -translate-y-4 duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:transform-none group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -61,7 +61,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials &amp; verification made easy
           </p>
-          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
+          <p class="transform transition-all -translate-y-4 duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:transform-none group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -74,7 +74,7 @@
         of the exceptional, your end-to-end solution.
       </p>
 
-      <NuxtLink to="/balansa" class="button transition duration-300 group-hover:translate-y-0 ease-in-out text-lg leading-none inline-block rounded-full font-bold bg-dark text-white transform hover:-translate-y-1 hover:scale-110">
+      <NuxtLink to="/about" class="button transition duration-300 group-hover:translate-y-0 ease-in-out text-lg leading-none inline-block rounded-full font-bold bg-dark text-white transform hover:-translate-y-1 hover:scale-110">
         Learn more
       </NuxtLink>
     </section>

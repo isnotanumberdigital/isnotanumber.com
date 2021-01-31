@@ -18,7 +18,7 @@
     </div>
 
     <nav>
-      <div class="flex-auto text-right hidden sm:block" id="desktop">
+      <div class="flex-auto text-right hidden sm:block">
         <ul class="space-x-2">
           <li class="inline-block text-left px-4 text-3xl">
             <NuxtLink to="/work">Work</NuxtLink>
@@ -36,8 +36,7 @@
       </div>
 
       <div
-        class="navigation transition-opacity duration-700 w-full h-screen sm:hidden bg-dark fixed left-0 top-0 right-0 bottom-0"
-        id="mobile"
+        class="hidden navigation transition-opacity duration-700 w-full h-screen sm:hidden bg-dark fixed left-0 top-0 right-0 bottom-0"
         style="opacity: 0;"
         ref="navigation"
       >
@@ -97,6 +96,7 @@ export default {
       this.open = !this.open
 
       this.$refs.navigation.style.opacity = this.open ? 1 : 0
+      this.$refs.navigation.classList.toggle('hidden')
     }
   }
 }
