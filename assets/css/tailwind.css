@@ -54,6 +54,10 @@
 }
 
 @screen md {
+  header {
+    mix-blend-mode: difference;
+  }
+
   .home-slider-3 {
     background-image: url('../img/gs-hs.png');
   }

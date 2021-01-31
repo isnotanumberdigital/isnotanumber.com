@@ -2,25 +2,27 @@
   <div>
     <Header />
 
-    <VueSlickCarousel
-      class="home-slider w-full h-90 relative z-0"
-      v-bind="settings"
-    >
-      <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
-        <div class="px-6 mx-auto p-8 h-screen flex items-center">
-          <h2 class="text-6xl md:text-8xl">
-            Why fit in when <br>you can <span class="animate-stand-out relative inline-block">stand out</span>
-          </h2>
+    <div ref="carousel">
+      <VueSlickCarousel
+        class="home-slider w-full h-90 relative z-0"
+        v-bind="settings"
+      >
+        <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
+          <div class="px-6 mx-auto p-8 h-screen flex items-center">
+            <h2 class="text-6xl md:text-8xl">
+              Why fit in when <br>you can <span class="animate-stand-out relative inline-block">stand out</span>
+            </h2>
+          </div>
         </div>
-      </div>
 
-      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-1 dark"></div>
-      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-2 dark"></div>
-      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-3"></div>
-      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-4 dark"></div>
-      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-5"></div>
-      <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-6"></div>
-    </VueSlickCarousel>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-1 dark"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-2 dark"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-3"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-4 dark"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-5"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-6"></div>
+      </VueSlickCarousel>
+    </div>
 
     <section class="px-6 mx-auto py-16 md:py-24 lg:py-32">
       <div class="grid gap-16 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
@@ -110,6 +112,21 @@ export default {
         fade: true,
         cssEase: 'linear'
       },
+    }
+  },
+  mounted () {
+    const carousel = this.$refs.carousel
+    const header = document.getElementsByTagName('header')[0]
+    const carouselCalc = (carousel.offsetTop + carousel.offsetHeight) - header.offsetHeight
+
+    window.onscroll = () => {
+      if (window.scrollY > carouselCalc) {
+        header.classList.add('text-dark')
+        header.classList.remove('text-white')
+      } else {
+        header.classList.remove('text-dark')
+        header.classList.add('text-white')
+      }
     }
   }
 }
