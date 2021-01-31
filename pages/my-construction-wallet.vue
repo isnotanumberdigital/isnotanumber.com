@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Header mode="dark" />
+    <Header mode="light" :shouldMix="true" />
 
-    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></section>
+    <section ref="banner" class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></section>
 
     <section class="px-6 mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
-        <div>
-          <h3 class="text-4xl text-gray-400">Client:</h3>
-          <h3 class="text-4xl mb-4">My Construction Wallet</h3>
-          <h3 class="text-4xl text-gray-400">Services:</h3>
-          <h3 class="text-4xl">UX, UI, Strategy</h3>
-        </div>
+        <ul>
+          <li class="text-4xl text-gray-400">Client:</li>
+          <li class="text-4xl mb-4">My Construction Wallet</li>
+          <li class="text-4xl text-gray-400">Services:</li>
+          <li class="text-4xl">UX, UI, Strategy</li>
+        </ul>
 
         <p class="text-2xl leading-normal">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -24,17 +24,32 @@
         </p>
       </div>
 
-      <img class="project" src="~/assets/img/project-singles/balansa/bp-ps-1.png" alt="balansa+" v-scroll-reveal="{ viewFactor: 0.5 }" />
+      <img class="project" src="~/assets/img/project-singles/mcw/banner.jpg" alt="My Construction Wallet" loading="lazy" />
     </section>
 
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-2.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-3.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-4.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-5.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-6.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-7.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-8.png" alt="balansa+" v-scroll-reveal />
+    <img src="~/assets/img/project-singles/mcw/screens.jpg" alt="My Construction Wallet" loading="lazy" />
+    <img src="~/assets/img/project-singles/mcw/website.jpg" alt="My Construction Wallet" loading="lazy" />
 
-    <Footer />
+    <Footer :flush="true" />
   </div>
 </template>
+
+<script>
+export default {
+  mounted () {
+    const banner = this.$refs.banner
+    const header = document.getElementsByTagName('header')[0]
+    const bannerCalc = (banner.offsetTop + banner.offsetHeight) - header.offsetHeight
+
+    window.onscroll = () => {
+      if (window.scrollY > bannerCalc) {
+        header.classList.add('text-dark')
+        header.classList.remove('text-white')
+      } else {
+        header.classList.remove('text-dark')
+        header.classList.add('text-white')
+      }
+    }
+  }
+}
+</script>

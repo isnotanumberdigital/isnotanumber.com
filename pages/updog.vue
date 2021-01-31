@@ -6,12 +6,12 @@
 
     <section class="px-6 mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
-        <div>
-          <h3 class="text-4xl text-gray-400">Client:</h3>
-          <h3 class="text-4xl mb-4">BullyBillows</h3>
-          <h3 class="text-4xl text-gray-400">Services:</h3>
-          <h3 class="text-4xl">UX, UI, Flutter</h3>
-        </div>
+        <ul>
+          <li class="text-4xl text-gray-400">Client:</li>
+          <li class="text-4xl mb-4">BullyBillows, UpDog</li>
+          <li class="text-4xl text-gray-400">Services:</li>
+          <li class="text-4xl">UX, UI, Strategy</li>
+        </ul>
 
         <p class="text-2xl leading-normal">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -24,17 +24,15 @@
         </p>
       </div>
 
-      <img class="project" src="~/assets/img/project-singles/balansa/bp-ps-1.png" alt="balansa+" v-scroll-reveal="{ viewFactor: 0.5 }" />
+      <img class="project" src="~/assets/img/project-singles/updog/branding.jpg" alt="UpDog" loading="lazy" />
     </section>
 
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-2.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-3.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-4.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-5.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-6.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-7.png" alt="balansa+" v-scroll-reveal />
-    <img class="project-image" src="~/assets/img/project-singles/balansa/bp-ps-8.png" alt="balansa+" v-scroll-reveal />
+    <img src="~/assets/img/project-singles/updog/banner-badge.jpg" alt="UpDog" loading="lazy" />
+    <img src="~/assets/img/project-singles/updog/all-screens.jpg" alt="UpDog" loading="lazy" />
+    <img src="~/assets/img/project-singles/updog/app-upclose.jpg" alt="UpDog" loading="lazy" />
+    <img src="~/assets/img/project-singles/updog/billboard.jpg" alt="UpDog" loading="lazy" />
+    <img src="~/assets/img/project-singles/updog/screens.jpg" alt="UpDog" loading="lazy" />
 
-    <Footer />
+    <Footer :flush="true" />
   </div>
 </template>
