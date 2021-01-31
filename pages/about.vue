@@ -1,6 +1,6 @@
 <template>
   <div class="bg-darker">
-    <Header mode="dark" />
+    <Header mode="light" />
 
     <section class="about-hero fixed w-full min-h-screen clear-img bg-center bg-no-repeat"></section>
 

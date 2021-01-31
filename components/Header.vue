@@ -1,6 +1,11 @@
 <template>
   <header
-    class="fixed p-8 flex text-white w-full z-40 header transition-colors duration-300"
+    class="fixed p-8 flex w-full z-40 header transition-colors duration-300"
+    :class="{
+      'text-white': mode === 'light',
+      'text-dark': mode === 'dark',
+      'mix-difference': shouldMix
+    }"
     ref="header"
   >
     <div id="logo" class="flex-auto flex justify-center sm:inline-block">
@@ -16,7 +21,7 @@
       <div class="flex-auto text-right hidden sm:block" id="desktop">
         <ul class="space-x-2">
           <li class="inline-block text-left px-4 text-3xl">
-            <NuxtLink to="/balansa">Work</NuxtLink>
+            <NuxtLink to="/work">Work</NuxtLink>
           </li>
           <li class="inline-block text-left px-4 text-3xl">
             <NuxtLink to="/about">About</NuxtLink>
@@ -38,7 +43,7 @@
       >
         <ul class="p-8 space-y-4">
           <li class="block text-center px-4 text-3xl">
-            <NuxtLink class="text-white" to="/balansa">Work</NuxtLink>
+            <NuxtLink class="text-white" to="/work">Work</NuxtLink>
           </li>
           <li class="block text-center px-4 text-3xl">
             <NuxtLink class="text-white" to="/about">About</NuxtLink>
@@ -76,6 +81,10 @@ export default {
     mode: {
       type: String,
       default: 'light'
+    },
+    shouldMix: {
+      type: Boolean,
+      default: false
     }
   },
   data() {

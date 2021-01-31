@@ -54,7 +54,7 @@
 }
 
 @screen md {
-  header {
+  .mix-difference {
     mix-blend-mode: difference;
   }
 
@@ -113,15 +113,16 @@
 
 .hamburgerTop.open {
   transform: rotate(45deg);
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 .hamburgerMiddle.open {
   opacity: 0;
   transition: none;
+  margin-top: 4px;
 }
 
 .hamburgerBottom.open {
   transform: rotate(-45deg);
-  margin-top: 15px;
+  margin-top: 11px;
 }

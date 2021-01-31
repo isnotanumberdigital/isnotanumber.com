@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header mode="light" />
+    <Header mode="dark" />
 
     <section class="px-6 mx-auto max-w-screen-xl py-56">
       <div class="grid gap-16 md:grid-cols-2">
