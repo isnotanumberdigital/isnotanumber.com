@@ -19,7 +19,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
           </p>
-          <p class="transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
+          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -31,7 +31,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
           </p>
-          <p class="transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
+          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -43,7 +43,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials &amp; verification made easy
           </p>
-          <p class="transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
+          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
@@ -55,7 +55,7 @@
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality
           </p>
-          <p class="transform -translate-y-4 transition duration-300 group-hover:translate-y-0 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 md:opacity-0">
+          <p class="cta transform -translate-y-4 transition duration-300 opacity-100 font-bold text-lg tracking-wider uppercase group-hover:opacity-100 group-hover:translate-y-0 md:opacity-0">
             View Project
           </p>
         </NuxtLink>
