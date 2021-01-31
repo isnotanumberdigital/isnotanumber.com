@@ -40,8 +40,9 @@
 <script>
 export default {
   mounted () {
+    const blurredImg = document.getElementsByClassName('blurred-img')[0]
+
     window.onscroll = () => {
-      const blurredImg = document.getElementsByClassName('blurred-img')[0]
       blurredImg.style.opacity = window.scrollY / 150.0
     }
   }
