@@ -29,7 +29,7 @@
           <li class="inline-block text-left px-4 text-3xl">
             <NuxtLink to="/contact">Contact</NuxtLink>
           </li>
-          <li class="hidden md:inline-block text-left px-4 text-3xl">
+          <li class="hidden lg:inline-block text-left px-4 text-3xl">
             <a href="mailto:hi@isnotanumber.com">hi@isnotanumber.com</a>
           </li>
         </ul>

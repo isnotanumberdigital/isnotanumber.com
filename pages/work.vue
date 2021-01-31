@@ -2,7 +2,7 @@
   <div>
     <Header mode="dark" />
 
-    <section class="px-6 mx-auto md:max-w-6xl py-16 md:pt-24 md:pb-18 lg:pt-56 lg:pb-18">
+    <section class="px-6 mx-auto md:max-w-6xl pt-32 pb-18 lg:pt-56 lg:pb-18">
       <div class="grid gap-16 grid-cols-1">
         <h3 class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
           Recent Work
