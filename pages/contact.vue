@@ -18,7 +18,7 @@
       </div>
     </section>
 
-    <img src="~/assets/img/contact/mountain@2x.jpg" alt="Mountains" v-scroll-reveal />
+    <img src="~/assets/img/contact/mountain@2x.jpg" alt="Mountains" loading="lazy" />
 
     <Footer :flush="true" />
   </div>
