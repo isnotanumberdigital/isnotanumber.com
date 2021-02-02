@@ -24,7 +24,7 @@
       </VueSlickCarousel>
     </div>
 
-    <section class="px-6 mx-auto py-16 md:py-24 lg:py-32">
+    <section class="px-6 container mx-auto py-16 md:py-24 lg:py-32">
       <div class="grid gap-16 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         <div></div>
         <p class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <section class="px-6 mx-auto py-8">
+    <section class="px-6 container mx-auto py-8">
       <div class="grid gap-16 md:grid-cols-2">
         <!-- UpDog -->
         <NuxtLink to="/updog" class="project group" v-scroll-reveal="{ delay: 75, viewFactor: 0.5 }">

@@ -2,7 +2,7 @@
   <div>
     <Header mode="dark" :shouldMix="true" />
 
-    <section class="px-6 mx-auto max-w-screen-xl py-56">
+    <section class="px-6 container mx-auto py-56">
       <div class="grid gap-16 md:grid-cols-2">
         <div class="flex items-start flex-col">
           <h3 class="mb-8">Contact</h3>

@@ -4,7 +4,7 @@
 
     <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.png')})`}"></section>
 
-    <section class="px-6 mx-auto py-32">
+    <section class="px-6 container mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
         <ul>
           <li class="text-4xl text-gray-400">Client:</li>

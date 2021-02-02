@@ -2,7 +2,7 @@
   <div>
     <Header mode="dark" />
 
-    <section class="px-6 mx-auto md:max-w-6xl pt-32 pb-18 lg:pt-56 lg:pb-18">
+    <section class="px-6 container mx-auto pt-32 pb-18 lg:pt-56 lg:pb-18">
       <div class="grid gap-16 grid-cols-1">
         <h3 class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
           Recent Work
@@ -10,7 +10,7 @@
       </div>
     </section>
 
-    <section class="px-6 mx-auto space-y-12 md:max-w-6xl py-8">
+    <section class="px-6 container mx-auto space-y-12 py-8">
       <!-- balansa+ -->
       <div class="md:max-w-3xl">
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 125, viewFactor: 0.5 }">
