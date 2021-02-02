@@ -26,6 +26,7 @@
 
     <section class="px-6 mx-auto py-16 md:py-24 lg:py-32">
       <div class="grid gap-16 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+        <div></div>
         <p class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
           We are a fully integrated digital agency – partners to the brave,
           makers of the exceptional, your end-to-end solution.
