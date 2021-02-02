@@ -77,7 +77,7 @@
           <div class="hamburgerBottom block absolute bg-black" :class="{'open': open}"></div>
         </div>
 
-        <span class="ml-2 inline-block text-xl leading-none">Menu</span>
+        <span class="-mt-1 ml-2 inline-block text-xl leading-none">Menu</span>
       </button>
     </div>
   </header>

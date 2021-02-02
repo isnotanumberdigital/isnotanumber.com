@@ -98,12 +98,16 @@
   transition: opacity 0.2s ease 0.5s;
 }
 
+.hamburgerTop {
+  margin-top: 1px;
+}
+
 .hamburgerMiddle {
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 .hamburgerBottom {
-  margin-top: 16px;
+  margin-top: 17px;
 }
 
 .hamburgerTop.open,
@@ -113,16 +117,16 @@
 
 .hamburgerTop.open {
   transform: rotate(45deg);
-  margin-top: 11px;
+  margin-top: 9px;
 }
 
 .hamburgerMiddle.open {
   opacity: 0;
   transition: none;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .hamburgerBottom.open {
   transform: rotate(-45deg);
-  margin-top: 11px;
+  margin-top: 9px;
 }

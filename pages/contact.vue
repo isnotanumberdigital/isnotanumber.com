@@ -10,7 +10,7 @@
       </div>
     </section>
 
-    <section class="px-6 container mx-auto pt-8">
+    <section class="px-6 container mx-auto pt-8 pb-8 sm:pb-0">
       <div class="grid gap-16 md:grid-cols-2">
         <div class="flex items-start flex-col">
           <h3 class="mb-8">Contact</h3>
