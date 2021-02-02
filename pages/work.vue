@@ -4,9 +4,9 @@
 
     <section class="px-6 container mx-auto pt-32 pb-18 lg:pt-56 lg:pb-18">
       <div class="grid gap-16 grid-cols-1">
-        <h3 class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight">
           Recent Work
-        </h3>
+        </h2>
       </div>
     </section>
 
