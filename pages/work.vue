@@ -79,6 +79,6 @@
       </NuxtLink>
     </section>
 
-    <Footer />
+    <Footer :transparent="true" />
   </div>
 </template>

@@ -1,8 +1,9 @@
 <template>
   <footer
-    class="relative bg-light bg-opacity-10"
+    class="relative bg-opacity-10"
     :class="{
       'text-white': mode === 'dark',
+      'bg-light': !transparent,
       'bg-transparent': transparent,
       'mt-16': !flush
     }"
