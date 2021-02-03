@@ -36,15 +36,3 @@
     <Footer mode="dark" :transparent="true" />
   </div>
 </template>
-
-<script>
-export default {
-  mounted () {
-    const blurredImg = document.getElementsByClassName('blurred-img')[0]
-
-    window.onscroll = () => {
-      blurredImg.style.opacity = window.scrollY / 150.0
-    }
-  }
-}
-</script>

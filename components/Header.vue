@@ -1,6 +1,6 @@
 <template>
   <header
-    class="absolute md:fixed p-8 flex w-full z-40 header transition-colors duration-300"
+    class="absolute md:fixed md:flex md:justify-between md:items-center p-8 flex w-full z-40 transition-colors duration-300"
     :class="{
       'text-white': mode === 'light',
       'text-dark': mode === 'dark',
@@ -19,17 +19,17 @@
 
     <nav>
       <div class="flex-auto text-right hidden sm:block">
-        <ul class="space-x-2">
-          <li class="inline-block text-left px-4 text-2xl">
+        <ul class="space-x-6">
+          <li class="inline-block text-left text-2xl leading-none">
             <NuxtLink to="/work">Work</NuxtLink>
           </li>
-          <li class="inline-block text-left px-4 text-2xl">
+          <li class="inline-block text-left text-2xl leading-none">
             <NuxtLink to="/about">About</NuxtLink>
           </li>
-          <li class="inline-block text-left px-4 text-2xl">
+          <li class="inline-block text-left text-2xl leading-none">
             <NuxtLink to="/contact">Contact</NuxtLink>
           </li>
-          <li class="hidden lg:inline-block text-left px-4 text-2xl">
+          <li class="hidden lg:inline-block text-left text-2xl leading-none">
             <a href="mailto:hi@isnotanumber.com">hi@isnotanumber.com</a>
           </li>
         </ul>
@@ -49,17 +49,17 @@
           </NuxtLink>
         </div>
 
-        <ul class="p-8 space-y-4">
-          <li class="block text-center px-4 text-2xl">
+        <ul class="p-8 space-x-4 space-y-4">
+          <li class="block text-center text-2xl">
             <NuxtLink class="text-white" to="/work">Work</NuxtLink>
           </li>
-          <li class="block text-center px-4 text-2xl">
+          <li class="block text-center text-2xl">
             <NuxtLink class="text-white" to="/about">About</NuxtLink>
           </li>
-          <li class="block text-center px-4 text-2xl">
+          <li class="block text-center text-2xl">
             <NuxtLink class="text-white" to="/contact">Contact</NuxtLink>
           </li>
-          <li class="block text-center px-4 text-2xl">
+          <li class="block text-center text-2xl">
             <a class="text-white" href="mailto:hi@isnotanumber.com">hi@isnotanumber.com</a>
           </li>
         </ul>
@@ -98,6 +98,52 @@ export default {
   data() {
     return {
       open: false
+    }
+  },
+  mounted () {
+    const header = document.getElementsByTagName('header')[0]
+    const blurredImg = document.getElementsByClassName('blurred-img')[0]
+    const carousel = document.getElementById('carousel')
+    const primaryText = this.mode === 'light' ? 'text-white' : 'text-dark'
+    let carouselCalc = 0
+
+    if (carousel) {
+      carouselCalc = (carousel.offsetTop + carousel.offsetHeight) - header.offsetHeight
+    }
+
+    window.onscroll = () => {
+      if (blurredImg) {
+        blurredImg.style.opacity = window.scrollY / 150
+      }
+
+      if (carousel && window.scrollY <= header.offsetHeight && !header.classList.contains('bg-dark')) {
+        if (window.scrollY > carouselCalc) {
+          header.classList.add('text-dark')
+          header.classList.remove('text-white')
+        } else {
+          header.classList.remove('text-dark')
+          header.classList.add('text-white')
+        }
+      } else {
+        header.classList.remove('text-dark')
+        header.classList.add('text-white')
+
+        if (window.scrollY > header.offsetHeight) {
+          header.classList.add('bg-dark')
+          header.classList.add('text-white')
+          header.classList.remove('text-dark')
+          header.classList.remove('mix-difference')
+        } else {
+          header.classList.remove('bg-dark')
+          header.classList.remove('text-white')
+          header.classList.remove('text-dark')
+          header.classList.add(primaryText)
+
+          if (this.shouldMix) {
+            header.classList.add('mix-difference')
+          }
+        }
+      }
     }
   },
   methods: {

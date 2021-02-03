@@ -2,7 +2,7 @@
   <div>
     <Header :shouldMix="true" />
 
-    <div ref="carousel">
+    <div id="carousel">
       <VueSlickCarousel
         class="home-slider w-full h-90 relative z-0"
         v-bind="settings"
@@ -118,23 +118,8 @@ export default {
         speed: 800,
         arrows: false,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
       },
-    }
-  },
-  mounted () {
-    const carousel = this.$refs.carousel
-    const header = document.getElementsByTagName('header')[0]
-    const carouselCalc = (carousel.offsetTop + carousel.offsetHeight) - header.offsetHeight
-
-    window.onscroll = () => {
-      if (window.scrollY > carouselCalc) {
-        header.classList.add('text-dark')
-        header.classList.remove('text-white')
-      } else {
-        header.classList.remove('text-dark')
-        header.classList.add('text-white')
-      }
     }
   }
 }
