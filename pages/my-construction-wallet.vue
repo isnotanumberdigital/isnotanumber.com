@@ -2,7 +2,7 @@
   <div>
     <Header mode="light" :shouldMix="true" />
 
-    <section ref="banner" class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></section>
+    <section id="banner" class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></section>
 
     <section class="px-6 container mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
@@ -33,23 +33,3 @@
     <Footer :flush="true" />
   </div>
 </template>
-
-<script>
-export default {
-  mounted () {
-    const banner = this.$refs.banner
-    const header = document.getElementsByTagName('header')[0]
-    const bannerCalc = (banner.offsetTop + banner.offsetHeight) - header.offsetHeight
-
-    window.onscroll = () => {
-      if (window.scrollY > bannerCalc) {
-        header.classList.add('text-dark')
-        header.classList.remove('text-white')
-      } else {
-        header.classList.remove('text-dark')
-        header.classList.add('text-white')
-      }
-    }
-  }
-}
-</script>

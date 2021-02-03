@@ -103,12 +103,15 @@ export default {
   mounted () {
     const header = document.getElementsByTagName('header')[0]
     const blurredImg = document.getElementsByClassName('blurred-img')[0]
+    const banner = document.getElementById('banner')
     const carousel = document.getElementById('carousel')
     const primaryText = this.mode === 'light' ? 'text-white' : 'text-dark'
-    let carouselCalc = 0
+    let bannerCalc = 0
 
-    if (carousel) {
-      carouselCalc = (carousel.offsetTop + carousel.offsetHeight) - header.offsetHeight
+    if (banner) {
+      bannerCalc = (banner.offsetTop + banner.offsetHeight) - header.offsetHeight
+    } else if (carousel) {
+      bannerCalc = (carousel.offsetTop + carousel.offsetHeight) - header.offsetHeight
     }
 
     window.onscroll = () => {
@@ -116,8 +119,8 @@ export default {
         blurredImg.style.opacity = window.scrollY / 150
       }
 
-      if (carousel && window.scrollY <= header.offsetHeight && !header.classList.contains('bg-dark')) {
-        if (window.scrollY > carouselCalc) {
+      if ((banner || carousel) && window.scrollY <= header.offsetHeight && !header.classList.contains('bg-dark')) {
+        if (window.scrollY > bannerCalc) {
           header.classList.add('text-dark')
           header.classList.remove('text-white')
         } else {
