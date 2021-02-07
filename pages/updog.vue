@@ -12,7 +12,7 @@
           <li class="text-4xl text-gray-400">Project:</li>
           <li class="text-4xl mb-4">UpDog</li>
           <li class="text-4xl text-gray-400">Services:</li>
-          <li class="text-4xl">UX, UI, Strategy</li>
+          <li class="text-4xl">UX, UI, Branding, Strategy, Mobile App</li>
         </ul>
 
         <p class="text-2xl leading-normal">

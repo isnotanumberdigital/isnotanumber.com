@@ -10,7 +10,7 @@
           <li class="text-4xl text-gray-400">Client:</li>
           <li class="text-4xl mb-4">GradSmart</li>
           <li class="text-4xl text-gray-400">Services:</li>
-          <li class="text-4xl">UX, UI, Strategy, Web Development</li>
+          <li class="text-4xl">UX, UI, Strategy, Web App</li>
         </ul>
 
         <p class="text-2xl leading-normal">
