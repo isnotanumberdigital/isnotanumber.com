@@ -16,13 +16,7 @@
         </ul>
 
         <p class="text-2xl leading-normal">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          UpDog is a one of a kind social media platform and is the only place to go to showcase your beloved furry best friends. From friendly online competitions to accumulating in-app currency. Users are able to enter competitions and acquire BB coins which can then be exchanged for rewards and prizes through vouchers codes from premium dog brands.
         </p>
       </div>
 

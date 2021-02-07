@@ -14,13 +14,7 @@
         </ul>
 
         <p class="text-2xl leading-normal">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          balansa+ is a platform dedicated to health and fitness live-streaming; connecting visitors directly with the very best industry leading instructors. We were approached to help design and build the live streaming platform, creating a user experience enabling visitors to quickly and easily navigate to suitable content of their preferred category.
         </p>
       </div>
 

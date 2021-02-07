@@ -1,11 +1,7 @@
 <template>
   <header
     class="absolute md:fixed md:flex md:justify-between md:items-center p-8 flex w-full z-40 transition-colors duration-300"
-    :class="{
-      'text-white': mode === 'light',
-      'text-dark': mode === 'dark',
-      'mix-difference': shouldMix
-    }"
+    :class="{'text-white': mode === 'light', 'text-dark': mode === 'dark'}"
     ref="header"
   >
     <div class="flex-auto flex justify-center sm:inline-block">
@@ -89,10 +85,6 @@ export default {
     mode: {
       type: String,
       default: 'light'
-    },
-    shouldMix: {
-      type: Boolean,
-      default: false
     }
   },
   data() {
@@ -135,16 +127,11 @@ export default {
           header.classList.add('bg-dark')
           header.classList.add('text-white')
           header.classList.remove('text-dark')
-          header.classList.remove('mix-difference')
         } else {
           header.classList.remove('bg-dark')
           header.classList.remove('text-white')
           header.classList.remove('text-dark')
           header.classList.add(primaryText)
-
-          if (this.shouldMix) {
-            header.classList.add('mix-difference')
-          }
         }
       }
     }

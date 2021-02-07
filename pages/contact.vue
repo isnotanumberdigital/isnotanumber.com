@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header mode="dark" :shouldMix="true" />
+    <Header mode="dark" />
 
     <section class="px-6 container mx-auto pt-32 pb-18 lg:pt-56 lg:pb-18">
       <div class="grid gap-16 grid-cols-1">

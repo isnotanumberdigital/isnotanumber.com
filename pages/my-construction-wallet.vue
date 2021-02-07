@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header mode="light" :shouldMix="true" />
+    <Header mode="light" />
 
     <section id="banner" class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></section>
 
@@ -14,13 +14,7 @@
         </ul>
 
         <p class="text-2xl leading-normal">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          My Construction Wallet is a digital identity wallet for the construction industry. It allows an individual to instantly share their personal information, right to work, and qualifications securely whilst maintaining privacy. Using Quantum Ledger technology it provides transparent, immutable, and cryptographically verifiable candidate information to employers.
         </p>
       </div>
 

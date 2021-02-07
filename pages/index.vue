@@ -1,10 +1,11 @@
 <template>
   <div>
-    <Header :shouldMix="true" />
+    <Header mode="dark" />
 
     <div id="carousel">
       <VueSlickCarousel
         class="home-slider w-full h-90 relative z-0"
+        @afterChange="onAfterChange"
         v-bind="settings"
       >
         <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
@@ -120,6 +121,23 @@ export default {
         fade: true,
         cssEase: 'linear',
       },
+    }
+  },
+  methods: {
+    onAfterChange(slideIndex) {
+      const activeSlide = document.getElementsByClassName('slick-active')[0]
+      const activeSlideItem = activeSlide.getElementsByClassName('home-slider-item')[0]
+      const header = document.getElementsByTagName('header')[0]
+
+      if (activeSlideItem?.classList.contains('dark')) {
+        header.classList.remove('text-dark')
+        header.classList.remove('text-white')
+        header.classList.add('text-white')
+      } else {
+        header.classList.remove('text-dark')
+        header.classList.remove('text-white')
+        header.classList.add('text-dark')
+      }
     }
   }
 }
