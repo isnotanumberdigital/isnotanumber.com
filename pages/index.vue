@@ -134,6 +134,8 @@ export default {
         header.classList.remove('text-white')
         header.classList.add('text-white')
       } else {
+        if (window.scrollY > header.offsetHeight) return
+
         header.classList.remove('text-dark')
         header.classList.remove('text-white')
         header.classList.add('text-dark')
