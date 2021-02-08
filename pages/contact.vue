@@ -15,7 +15,7 @@
         <div class="flex items-start flex-col">
           <h3 class="mb-8">Contact</h3>
           <a href="mailto:hi@isnotanumber.com" class="mb-2 text-2xl">hi@isnotanumber.com</a>
-          <a href="tel:+442073786699" class="text-2xl">+44 20 7378 6699</a>
+          <a href="tel:+447383436286" class="text-2xl">+447 383 436 286</a>
         </div>
 
         <div class="flex items-start flex-col">
