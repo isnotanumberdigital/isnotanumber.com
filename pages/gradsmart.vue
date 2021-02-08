@@ -2,7 +2,7 @@
   <div>
     <Header mode="dark" />
 
-    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.png')})`}"></section>
+    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.webp')})`}"></section>
 
     <section class="px-6 container mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
@@ -18,13 +18,13 @@
         </p>
       </div>
 
-      <img class="project" src="~/assets/img/project-singles/gradsmart/banner.jpg" alt="GradSmart" loading="lazy" />
+      <img class="project" src="~/assets/img/project-singles/gradsmart/banner.webp" alt="GradSmart" loading="lazy" />
     </section>
 
-    <img src="~/assets/img/project-singles/gradsmart/home.jpg" alt="GradSmart" loading="lazy" />
-    <img src="~/assets/img/project-singles/gradsmart/personalities.jpg" alt="GradSmart" loading="lazy" />
-    <img src="~/assets/img/project-singles/gradsmart/how-it-works.jpg" alt="GradSmart" loading="lazy" />
-    <img src="~/assets/img/project-singles/gradsmart/results.jpg" alt="GradSmart" loading="lazy" />
+    <img src="~/assets/img/project-singles/gradsmart/home.webp" alt="GradSmart" loading="lazy" />
+    <img src="~/assets/img/project-singles/gradsmart/personalities.webp" alt="GradSmart" loading="lazy" />
+    <img src="~/assets/img/project-singles/gradsmart/how-it-works.webp" alt="GradSmart" loading="lazy" />
+    <img src="~/assets/img/project-singles/gradsmart/results.webp" alt="GradSmart" loading="lazy" />
 
     <Footer :flush="true" />
   </div>

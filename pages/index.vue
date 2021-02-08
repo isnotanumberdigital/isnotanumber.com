@@ -39,7 +39,7 @@
       <div class="grid gap-16 md:grid-cols-2">
         <!-- UpDog -->
         <NuxtLink to="/updog" class="project group" v-scroll-reveal="{ delay: 75, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/ud-p-hero.png')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/ud-p-hero.webp')})`}"></div>
           <h3 class="mt-8 text-2xl">UpDog</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
@@ -51,7 +51,7 @@
 
         <!-- balansa+ -->
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 125, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.png')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.webp')})`}"></div>
           <h3 class="mt-8 text-2xl">balansa+</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
@@ -63,7 +63,7 @@
 
         <!-- MCW -->
         <NuxtLink to="/my-construction-wallet" class="project group" v-scroll-reveal="{ delay: 175, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.webp')})`}"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials &amp; verification made easy
@@ -75,7 +75,7 @@
 
         <!-- GradSmart -->
         <NuxtLink to="/gradsmart" class="project group" v-scroll-reveal="{ delay: 225, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.png')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.webp')})`}"></div>
           <h3 class="mt-8 text-2xl">GradSmart</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality

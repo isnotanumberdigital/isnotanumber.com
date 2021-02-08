@@ -2,7 +2,7 @@
   <div>
     <Header mode="dark" />
 
-    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.png')})`}"></section>
+    <section class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.webp')})`}"></section>
 
     <section class="px-6 container mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
@@ -18,16 +18,16 @@
         </p>
       </div>
 
-      <img class="project" src="~/assets/img/project-singles/balansa/bp-ps-1.png" alt="balansa+" loading="lazy" />
+      <img class="project" src="~/assets/img/project-singles/balansa/bp-ps-1.webp" alt="balansa+" loading="lazy" />
     </section>
 
-    <img src="~/assets/img/project-singles/balansa/bp-ps-2.png" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-3.png" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-4.png" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-5.png" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-6.png" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-7.png" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-8.png" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-2.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-3.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-4.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-5.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-6.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-7.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-8.webp" alt="balansa+" loading="lazy" />
 
     <Footer :flush="true" />
   </div>

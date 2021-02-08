@@ -2,7 +2,7 @@
   <div>
     <Header mode="light" />
 
-    <section id="banner" class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.png')})`}"></section>
+    <section id="banner" class="w-full h-90 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.webp')})`}"></section>
 
     <section class="px-6 container mx-auto py-32">
       <div class="grid gap-16 md:grid-cols-2 mb-32">
@@ -18,11 +18,11 @@
         </p>
       </div>
 
-      <img class="project" src="~/assets/img/project-singles/mcw/banner.jpg" alt="My Construction Wallet" loading="lazy" />
+      <img class="project" src="~/assets/img/project-singles/mcw/banner.webp" alt="My Construction Wallet" loading="lazy" />
     </section>
 
-    <img src="~/assets/img/project-singles/mcw/screens.jpg" alt="My Construction Wallet" loading="lazy" />
-    <img src="~/assets/img/project-singles/mcw/website.jpg" alt="My Construction Wallet" loading="lazy" />
+    <img src="~/assets/img/project-singles/mcw/screens.webp" alt="My Construction Wallet" loading="lazy" />
+    <img src="~/assets/img/project-singles/mcw/website.webp" alt="My Construction Wallet" loading="lazy" />
 
     <Footer :flush="true" />
   </div>

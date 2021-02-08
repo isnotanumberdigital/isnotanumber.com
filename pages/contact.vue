@@ -26,6 +26,6 @@
       </div>
     </section>
 
-    <img src="~/assets/img/contact/mountain@2x.jpg" alt="Mountains" loading="lazy" />
+    <img src="~/assets/img/contact/mountain@2x.webp" alt="Mountains" loading="lazy" />
   </div>
 </template>
