@@ -1,0 +1,133 @@
+@import './fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font special button padding */
+
+.button {
+  padding: 15px 20px 10px 20px;
+}
+
+.mob-menu .button {
+  padding: 10px 20px 0px 20px;
+}
+
+/* images */
+
+.clear-img {
+  background-image: url('../img/about/f-2020.jpg');
+  background-size: 100%;
+}
+
+.blurred-img {
+  background-image: url('../img/about/f-2020-blurred.jpg');
+  background-size: 100%;
+}
+
+.home-slider-intro {
+  background-image: url('../img/intro-bg-m.jpg');
+}
+
+.home-slider-1 {
+  background-image: url('../img/updog-2.jpg');
+}
+
+.home-slider-2 {
+  background-image: url('../img/mcw-bg.jpg');
+}
+
+.home-slider-3 {
+  background-image: url('../img/gs-hs-m.jpg');
+}
+
+.home-slider-4 {
+  background-image: url('../img/craftr-hs-m.jpg');
+}
+
+.home-slider-5 {
+  background-image: url('../img/balansa-hs-m.jpg');
+}
+
+.home-slider-6 {
+  background-image: url('../img/balansa-hs-old-m.jpg');
+}
+
+@screen md {
+  .home-slider-intro {
+    background-image: url('../img/intro-bg.jpg');
+  }
+
+  .home-slider-3 {
+    background-image: url('../img/gs-hs.png');
+  }
+
+  .home-slider-4 {
+    background-image: url('../img/craftr-hs.png');
+  }
+
+  .home-slider-5 {
+    background-image: url('../img/balansa-hs.jpg');
+  }
+
+  .home-slider-6 {
+    background-image: url('../img/balansa-hs-old.png');
+  }
+}
+
+/* hamburger menu */
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+}
+
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+  width: 25px;
+  height: 2px;
+}
+
+.hamburgerTop,
+.hamburgerBottom {
+  transition: transform 0.4s ease, margin-top 0.3s ease 0.4s;
+}
+
+.hamburgerMiddle {
+  transition: opacity 0.2s ease 0.5s;
+}
+
+.hamburgerTop {
+  margin-top: 1px;
+}
+
+.hamburgerMiddle {
+  margin-top: 9px;
+}
+
+.hamburgerBottom {
+  margin-top: 17px;
+}
+
+.hamburgerTop.open,
+.hamburgerBottom.open {
+  transition: margin-top 0.3s ease, transform 0.4s ease 0.3s;
+}
+
+.hamburgerTop.open {
+  transform: rotate(45deg);
+  margin-top: 9px;
+}
+
+.hamburgerMiddle.open {
+  opacity: 0;
+  transition: none;
+  margin-top: 3px;
+}
+
+.hamburgerBottom.open {
+  transform: rotate(-45deg);
+  margin-top: 9px;
+}
