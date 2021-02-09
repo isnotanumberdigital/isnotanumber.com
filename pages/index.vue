@@ -121,6 +121,7 @@ export default {
         arrows: false,
         fade: true,
         cssEase: 'linear',
+        pauseOnHover: false,
       },
     }
   },
