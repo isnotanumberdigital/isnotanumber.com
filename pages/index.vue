@@ -119,7 +119,7 @@ export default {
         speed: 800,
         arrows: false,
         fade: true,
-        cssEase: 'linear',
+        cssEase: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
       },
     }
   },
