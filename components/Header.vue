@@ -45,7 +45,7 @@
           </NuxtLink>
         </div>
 
-        <ul class="p-8 space-x-4 space-y-4">
+        <ul class="p-8 space-y-4">
           <li class="block text-center text-2xl">
             <NuxtLink class="text-white" to="/work">Work</NuxtLink>
           </li>
