@@ -26,8 +26,8 @@
   background-size: 100%;
 }
 
-/*.home-slider-intro {
-  //background-image: url('../img/intro-bg-m.webp');
+.home-slider-intro {
+  background-image: url('../img/intro-bg-m.webp');
 }
 
 .home-slider-1 {
@@ -52,11 +52,11 @@
 
 .home-slider-6 {
   background-image: url('../img/balansa-hs-old-m.webp');
-}*/
+}
 
 @screen md {
-  /*.home-slider-intro {
-    //background-image: url('../img/intro-bg.webp');
+  .home-slider-intro {
+    background-image: url('../img/intro-bg.webp');
   }
 
   .home-slider-3 {
@@ -73,7 +73,7 @@
 
   .home-slider-6 {
     background-image: url('../img/balansa-hs-old.webp');
-  }*/
+  }
 }
 
 /* hamburger menu */
