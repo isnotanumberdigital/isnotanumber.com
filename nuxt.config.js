@@ -2,6 +2,14 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  render: {
+      // Setting up cache for 'static' directory - a year in milliseconds
+      // https://web.dev/uses-long-cache-ttl
+      static: {
+        maxAge: 60 * 60 * 24 * 365 * 1000,
+      },
+    },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Not a Number',
@@ -33,6 +41,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
+    { src: '~/plugins/lazyload-images', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

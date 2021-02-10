@@ -9,7 +9,7 @@
         v-bind="settings"
         ref="carousel"
       >
-        <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
+        <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat lazyload" data-bg="/img/intro-bg.webp">
           <div class="px-6 lg:pl-48 mx-auto p-8 h-screen flex items-center">
             <h2 class="text-6xl md:text-8xl">
               Why fit in when <br>you can <span class="animate-lil-stand-out md:animate-big-stand-out relative inline-block">stand out</span>
@@ -17,12 +17,12 @@
           </div>
         </div>
 
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-1 dark"></div>
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-2 dark"></div>
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-3"></div>
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-4 dark"></div>
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-5"></div>
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-6"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-1 dark lazyload" data-bg="/img/updog-2.webp"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-2 dark lazyload" data-bg="/img/mcw-bg.webp"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-3 lazyload" data-bg="/img/gs-hs.webp"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-4 dark lazyload" data-bg="/img/craftr-hs.webp"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-5 lazyload" data-bg="/img/balansa-hs.webp"></div>
+        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-6 lazyload" data-bg="/img/balansa-hs-old.webp"></div>
       </VueSlickCarousel>
     </div>
 
@@ -40,7 +40,7 @@
       <div class="grid gap-16 md:grid-cols-2">
         <!-- UpDog -->
         <NuxtLink to="/updog" class="project group" v-scroll-reveal="{ delay: 75, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/ud-p-hero.webp')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat lazyload" data-bg="/img/links/ud-p-hero.webp"></div>
           <h3 class="mt-8 text-2xl">UpDog</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Your best friends social
@@ -52,7 +52,7 @@
 
         <!-- balansa+ -->
         <NuxtLink to="/balansa" class="project group" v-scroll-reveal="{ delay: 125, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/bp-p-hero.webp')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat lazyload" data-bg="/img/links/bp-p-hero.webp"></div>
           <h3 class="mt-8 text-2xl">balansa+</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Streaming for the wellness industry
@@ -64,7 +64,7 @@
 
         <!-- MCW -->
         <NuxtLink to="/my-construction-wallet" class="project group" v-scroll-reveal="{ delay: 175, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.webp')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat lazyload" data-bg="/img/links/mcw-p-hero.webp"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Credentials &amp; verification made easy
@@ -76,7 +76,7 @@
 
         <!-- GradSmart -->
         <NuxtLink to="/gradsmart" class="project group" v-scroll-reveal="{ delay: 225, viewFactor: 0.5 }">
-          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/gs-p-hero.webp')})`}"></div>
+          <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat lazyload" data-bg="/img/links/gs-p-hero.webp"></div>
           <h3 class="mt-8 text-2xl">GradSmart</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
             Find the career that fits your personality
