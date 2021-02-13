@@ -22,12 +22,12 @@
 }
 
 .blurred-img {
-  background-image: url('../img/about/f-2020-blurred.webp');
+  background-image: url('../img/about/f-2020-blurred.jpg');
   background-size: 100%;
 }
 
 .home-slider-intro {
-  background-image: url('../img/intro-bg-m.webp');
+  background-image: url('../img/intro-bg-m.jpg');
 }
 
 .home-slider-1 {
@@ -56,7 +56,7 @@
 
 @screen md {
   .home-slider-intro {
-    background-image: url('../img/intro-bg.webp');
+    background-image: url('../img/intro-bg.jpg');
   }
 
   .home-slider-3 {

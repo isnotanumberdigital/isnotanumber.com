@@ -26,7 +26,7 @@
     <img src="~/assets/img/project-singles/balansa/bp-ps-4.webp" alt="balansa+" loading="lazy" />
     <img src="~/assets/img/project-singles/balansa/bp-ps-5.webp" alt="balansa+" loading="lazy" />
     <img src="~/assets/img/project-singles/balansa/bp-ps-6.webp" alt="balansa+" loading="lazy" />
-    <img src="~/assets/img/project-singles/balansa/bp-ps-7.webp" alt="balansa+" loading="lazy" />
+    <img src="~/assets/img/project-singles/balansa/bp-ps-7.png" alt="balansa+" loading="lazy" />
     <img src="~/assets/img/project-singles/balansa/bp-ps-8.webp" alt="balansa+" loading="lazy" />
 
     <Footer :flush="true" />
