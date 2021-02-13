@@ -5,8 +5,9 @@
     <div id="carousel">
       <VueSlickCarousel
         class="home-slider w-full h-90 relative z-0"
-        @afterChange="onAfterChange"
+        @beforeChange="onBeforeChange"
         v-bind="settings"
+        ref="carousel"
       >
         <div class="home-slider-intro text-dark h-90 bg-cover bg-center bg-no-repeat">
           <div class="px-6 lg:pl-48 mx-auto p-8 h-screen flex items-center">
@@ -119,19 +120,21 @@ export default {
         speed: 800,
         arrows: false,
         fade: true,
-        cssEase: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+        cssEase: 'linear',
+        pauseOnHover: false,
       },
     }
   },
   methods: {
-    onAfterChange(slideIndex) {
+    onBeforeChange(slideIndex) {
+      const slides = document.getElementsByClassName('home-slider-item')
       const activeSlide = document.getElementsByClassName('slick-active')[0]
-      const activeSlideItem = activeSlide.getElementsByClassName('home-slider-item')[0]
+      const next = [].indexOf.call(activeSlide.parentElement.children, activeSlide);
+      const activeSlideItem = slides[next]
       const header = document.getElementsByTagName('header')[0]
 
       if (activeSlideItem?.classList.contains('dark')) {
         header.classList.remove('text-dark')
-        header.classList.remove('text-white')
         header.classList.add('text-white')
       } else {
         if (window.scrollY > header.offsetHeight) return

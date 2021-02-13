@@ -1,6 +1,6 @@
 <template>
   <header
-    class="absolute md:fixed md:flex md:justify-between md:items-center p-8 flex w-full z-40 transition-colors duration-300"
+    class="absolute md:fixed md:flex md:justify-between md:items-center p-8 flex w-full z-40 transition-colors duration-800"
     :class="{'text-white': mode === 'light', 'text-dark': mode === 'dark'}"
     ref="header"
   >
@@ -32,7 +32,7 @@
       </div>
 
       <div
-        class="hidden navigation transition-opacity duration-700 w-full h-screen sm:hidden bg-dark fixed left-0 top-0 right-0 bottom-0"
+        class="hidden navigation transition-opacity duration-7000 w-full h-screen sm:hidden bg-dark fixed left-0 top-0 right-0 bottom-0"
         style="opacity: 0;"
         ref="navigation"
       >
