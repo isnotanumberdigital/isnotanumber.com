@@ -50,10 +50,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://www.npmjs.com/package/@nuxtjs/gtm
+    '@nuxtjs/gtm',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // Google Tag Manager configuration: https://www.npmjs.com/package/@nuxtjs/gtm
+  gtm: {
+    id: 'GTM-59BTLCT',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
