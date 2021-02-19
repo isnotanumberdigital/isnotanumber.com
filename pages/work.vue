@@ -54,7 +54,7 @@
       </div>
 
       <!-- MCW -->
-      <div class="md:max-w-md">
+      <div class="md:max-w-md hidden">
         <NuxtLink to="/my-construction-wallet" class="project group" v-scroll-reveal="{ delay: 175, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 md:aspect-w-4 md:aspect-h-5 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.webp')})`}"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>

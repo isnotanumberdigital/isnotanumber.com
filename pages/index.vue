@@ -18,7 +18,6 @@
         </div>
 
         <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-1 dark"></div>
-        <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-2 dark"></div>
         <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-3"></div>
         <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-4 dark"></div>
         <div class="home-slider-item h-90 bg-cover bg-center bg-no-repeat home-slider-5"></div>
@@ -63,7 +62,7 @@
         </NuxtLink>
 
         <!-- MCW -->
-        <NuxtLink to="/my-construction-wallet" class="project group" v-scroll-reveal="{ delay: 175, viewFactor: 0.5 }">
+        <NuxtLink to="/my-construction-wallet" class="project group hidden" v-scroll-reveal="{ delay: 175, viewFactor: 0.5 }">
           <div class="image aspect-w-16 aspect-h-9 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url(${require('~/assets/img/links/mcw-p-hero.webp')})`}"></div>
           <h3 class="mt-8 text-2xl">My Construction Wallet</h3>
           <p class="mb-4 md:mb-8 text-2xl text-gray-400">
