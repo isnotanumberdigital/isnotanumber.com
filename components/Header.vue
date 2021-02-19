@@ -97,7 +97,6 @@ export default {
     const blurredImg = document.getElementsByClassName('blurred-img')[0]
     const banner = document.getElementById('banner')
     const carousel = document.getElementById('carousel')
-    const primaryText = this.mode === 'light' ? 'text-white' : 'text-dark'
     let bannerCalc = 0
 
     if (banner) {
@@ -111,28 +110,10 @@ export default {
         blurredImg.style.opacity = window.scrollY / 150
       }
 
-      if ((banner || carousel) && window.scrollY <= header.offsetHeight && !header.classList.contains('bg-dark')) {
-        /*if (window.scrollY > bannerCalc) {
-          header.classList.add('text-dark')
-          header.classList.remove('text-white')
-        } else {
-          header.classList.remove('text-dark')
-          header.classList.add('text-white')
-        }*/
+      if (window.scrollY > header.offsetHeight) {
+        header.classList.add('bg-dark')
       } else {
-        //header.classList.remove('text-dark')
-        //header.classList.add('text-white')
-
-        if (window.scrollY > header.offsetHeight) {
-          header.classList.add('bg-dark')
-          //header.classList.add('text-white')
-          //header.classList.remove('text-dark')
-        } else {
-          header.classList.remove('bg-dark')
-          //header.classList.remove('text-white')
-          //header.classList.remove('text-dark')
-          //header.classList.add(primaryText)
-        }
+        header.classList.remove('bg-dark')
       }
     }
   },
