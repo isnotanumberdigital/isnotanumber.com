@@ -112,26 +112,26 @@ export default {
       }
 
       if ((banner || carousel) && window.scrollY <= header.offsetHeight && !header.classList.contains('bg-dark')) {
-        if (window.scrollY > bannerCalc) {
+        /*if (window.scrollY > bannerCalc) {
           header.classList.add('text-dark')
           header.classList.remove('text-white')
         } else {
           header.classList.remove('text-dark')
           header.classList.add('text-white')
-        }
+        }*/
       } else {
-        header.classList.remove('text-dark')
-        header.classList.add('text-white')
+        //header.classList.remove('text-dark')
+        //header.classList.add('text-white')
 
         if (window.scrollY > header.offsetHeight) {
           header.classList.add('bg-dark')
-          header.classList.add('text-white')
-          header.classList.remove('text-dark')
+          //header.classList.add('text-white')
+          //header.classList.remove('text-dark')
         } else {
           header.classList.remove('bg-dark')
-          header.classList.remove('text-white')
-          header.classList.remove('text-dark')
-          header.classList.add(primaryText)
+          //header.classList.remove('text-white')
+          //header.classList.remove('text-dark')
+          //header.classList.add(primaryText)
         }
       }
     }
